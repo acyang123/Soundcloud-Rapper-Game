@@ -162,12 +162,6 @@ function InitializeHater2() {
   };
 }
 
-function RenderRAPPER (context) {
-  if (!RAPPER.initialized)
-  {
-    return;
-  }
-}
 function RenderHATER (context) {
   if (!HATER.initialized)
   {

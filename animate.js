@@ -79,19 +79,23 @@ function handleBlockAnimation()
   // Check if asteroid is leaving the boundary, if so, switch side
 }
 function RenderRapper(context) {
+  context.fillStyle = "#000000";
   context.fillRect(RAPPER.x,RAPPER.y,50,50);
   // Draw a new item here using the canvas 'context' variable
 }
 function RenderHater(context) {
+  context.fillStyle = "#000000";
   context.fillRect(HATER.x,HATER.y,50,50);
   // Draw a new item here using the canvas 'context' variable
 }
 function RenderHater2(context) {
+  context.fillStyle = "#000000";
   context.fillRect(HATER2.x,HATER2.y,50,50);
   // Draw a new item here using the canvas 'context' variable
 }
 function RenderBlock (context)
 {
+  context.fillStyle = "#000000";
   context.fillRect(BLOCK.x,BLOCK.y,50,50);
 }
 
@@ -101,17 +105,17 @@ function runGame() {
   if (GAME.started) {
 
     // 1 - Reposition the objects
-
+    context.clearRect(0,0,GAME.canvas.width,GAME.canvas.height);
+    RenderRapper(context);
+    RenderHater(context);
+    RenderHater2(context);
+    RenderBlock(context);
     handleRapperAnimation();
     handleHaterAnimation();
     handleHater2Animation();
     handleBlockAnimation();
 
-    context.clearRect(0,0,GAME.canvas.width,GAME.canvas.height);
-    RenderRapper(context);
-    RenderHater(context);
-    RenderHater2(context);
-    RenderBlock(context)
+
     if (BLOCK.x==0)
     {
       handleBlockAnimation();

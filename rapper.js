@@ -14,15 +14,15 @@ function InitializeRapper() {
       },
       {
         x : 2,
-       	y : -3
+       	y : 3
       },
       {
         x : 0,
        	y : 0
       },
       {
-        x : -2,
-       	y : -3
+        x : 2,
+       	y : 3
       },
       {
         x : 0,
@@ -35,47 +35,7 @@ function InitializeRapper() {
     },
     scale : 5,
     speed : 3,
-    initialized : true,
-    clout:0
-  };
-}
-
-function InitializeBlock()
-{
-  var canvas = document.getElementById('mainCanvas');
-  var context = canvas.getContext('2d');
-  context.scale(1,1);
-  var BLOCK={
-    x: 600,
-    y: Math.random()*150+1,
-    positions : [
-      {
-        x : 0,
-       	y : 3
-      },
-      {
-        x : 2,
-       	y : -3
-      },
-      {
-        x : 0,
-       	y : 0
-      },
-      {
-        x : -2,
-       	y : -3
-      },
-      {
-        x : 0,
-       	y : 3
-      }],
-      latest : {
-          x : BLOCK.x,
-          y : BLOCK.y,
-      },
-      scale : 5,
-      speed : 3,
-      initialized : true,
+    initialized : true
   };
 }
 
@@ -96,15 +56,15 @@ function InitializeHater() {
       },
       {
         x : 2,
-       	y : -3
+       	y : 3
       },
       {
         x : 0,
        	y : 0
       },
       {
-        x : -2,
-       	y : -3
+        x : 2,
+       	y : 3
       },
       {
         x : 0,
@@ -113,8 +73,7 @@ function InitializeHater() {
     ],
     latest : {
         x : HATER.x,
-        y : RAPPER.y,
-        distance: RAPPER.x-HATER.x,
+        y : HATER.y,
     },
     scale : 5,
     speed : 3,
@@ -123,62 +82,241 @@ function InitializeHater() {
   };
 }
 
-function InitializeHater2() {
+function InitializeHaterTwo() {
   var canvas = document.getElementById('mainCanvas');
   var context = canvas.getContext('2d');
   context.scale(1,1);
-  HATER2= {
+  HATERTWO = {
     x : 600,
-    y : Math.random()*150+1,
+    y :Math.random()*300+1,
     positions : [
       {
-        x : 1,
-       	y : 2
+        x : 0,
+       	y : 3
       },
       {
-        x : 1,
-       	y : -1
+        x : 2,
+       	y : 3
       },
       {
-        x : 1,
-       	y : 1
+        x : 0,
+       	y : 0
       },
       {
-        x : -1,
-       	y : -2
+        x : 2,
+       	y : 3
       },
       {
-        x : 1,
-       	y : 2
+        x : 0,
+       	y : 3
       }
     ],
     latest : {
-        x :HATER2.x,
-        y : HATER2.y,
+        x : HATERTWO.x,
+        y : HATERTWO.y,
     },
     scale : 5,
     speed : 3,
-    initialized : true,
+    initialized : true
+
   };
 }
 
-function RenderHATER (context) {
-  if (!HATER.initialized)
-  {
-    return;
-  }
+function InitializeHaterThree() {
+  var canvas = document.getElementById('mainCanvas');
+  var context = canvas.getContext('2d');
+  context.scale(1,1);
+  HATERTHREE = {
+    x : 600,
+    y :Math.random()*300+1,
+    positions : [
+      {
+        x : 0,
+       	y : 3
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 0
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 3
+      }
+    ],
+    latest : {
+        x : HATERTHREE.x,
+        y : HATERTHREE.y,
+    },
+    scale : 5,
+    speed : 3,
+    initialized : true
+
+  };
 }
-function RenderHATER2 (context) {
-  if (!HATER2.initialized)
-  {
-    return;
-  }
+function InitializeBlockOne() {
+  var canvas = document.getElementById('mainCanvas');
+  var context = canvas.getContext('2d');
+  context.scale(1,1);
+  BLOCKONE = {
+    x : Math.random()*1000+1,
+    y :Math.random()*500+1,
+    positions : [
+      {
+        x : 0,
+       	y : 3
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 0
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 3
+      }
+    ],
+    latest : {
+        x : BLOCKONE.x,
+        y : BLOCKONE.y,
+    },
+    scale : 5,
+    speed : 3,
+    initialized : true
+
+  };
 }
 
-function RenderBlock(context)
-{
-  if (!BLOCK.initialized)
-  {
-    return;
-  }
+function InitializeBlockTwo() {
+  var canvas = document.getElementById('mainCanvas');
+  var context = canvas.getContext('2d');
+  context.scale(1,1);
+  BLOCKTWO = {
+    x : Math.random()*900+1,
+    y :Math.random()*600+1,
+    positions : [
+      {
+        x : 0,
+       	y : 3
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 0
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 3
+      }
+    ],
+    latest : {
+        x : BLOCKTWO.x,
+        y : BLOCKTWO.y,
+    },
+    scale : 5,
+    speed : 3,
+    initialized : true
+
+  };
+}
+
+function InitializeBlockThree() {
+  var canvas = document.getElementById('mainCanvas');
+  var context = canvas.getContext('2d');
+  context.scale(1,1);
+  BLOCKTHREE = {
+    x : Math.random()*500+1,
+    y :Math.random()*300+1,
+    positions : [
+      {
+        x : 0,
+       	y : 3
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 0
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 3
+      }
+    ],
+    latest : {
+        x : BLOCKTHREE.x,
+        y : BLOCKTHREE.y,
+    },
+    scale : 5,
+    speed : 3,
+    initialized : true
+
+  };
+}
+
+function InitializeBlockFour() {
+  var canvas = document.getElementById('mainCanvas');
+  var context = canvas.getContext('2d');
+  context.scale(1,1);
+  BLOCKFOUR = {
+    x : Math.random()*700+1,
+    y :Math.random()*400+1,
+    positions : [
+      {
+        x : 0,
+       	y : 3
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 0
+      },
+      {
+        x : 2,
+       	y : 3
+      },
+      {
+        x : 0,
+       	y : 3
+      }
+    ],
+    latest : {
+        x : BLOCKFOUR.x,
+        y : BLOCKFOUR.y,
+    },
+    scale : 5,
+    speed : 3,
+    initialized : true
+
+  };
 }

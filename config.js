@@ -1,6 +1,6 @@
 var GAME={
   canvas:{
-    width:600,height:300
+    width:1200,height:600
   },
   started:true, level:1
 };
@@ -10,7 +10,7 @@ var RAPPER={
   latest:
   {
     x:300,
-    y:150
+    y:150,
   }
 };
 
@@ -20,24 +20,55 @@ var HATER={
   {
     x:300,
     y:150,
-    distance:150
   }
 };
 
-var HATER2={
+var HATERTWO={
   initialized:false,
   latest:
   {
-    x:300,
-    y:150
+    x:600,
+    y :Math.random()*300+1,
   }
 };
 
-var BLOCK={
+var HATERTHREE={
   initialized:false,
   latest:
   {
-    x:300,
-    y:150
+    x:600,
+    y :Math.random()*300+1,
   }
-}
+};
+var BLOCKONE={
+  initialized:false,
+  latest:
+  {
+    x:Math.random()*500+1,
+    y :Math.random()*300+1,
+  }
+};
+var BLOCKTWO={
+  initialized:false,
+  latest:
+  {
+    x:Math.random()*500+1,
+    y :Math.random()*300+1,
+  }
+};
+var BLOCKTHREE={
+  initialized:false,
+  latest:
+  {
+    x:Math.random()*500+1,
+    y :Math.random()*300+1,
+  }
+};
+var BLOCKFOUR={
+  initialized:false,
+  latest:
+  {
+    x:Math.random()*500+1,
+    y :Math.random()*300+1,
+  }
+};
